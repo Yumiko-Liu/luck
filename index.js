@@ -33,6 +33,9 @@ var clientWidth = document.documentElement.clientWidth;
 var clientHeight = document.documentElement.clientHeight;
 var falseBtn = document.getElementById('false-btn');
 var trueBtn = document.getElementById('true-btn');
+var title = document.getElementById('title');
+
+title.innerText = decodeURIComponent(getQueryString('title'));
 
 if (!getQueryString('cheat')) {
   falseBtn.onmouseover = function() {
